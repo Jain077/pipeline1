@@ -3,6 +3,7 @@ pipeline {
   parameters {
       string defaultValue: 'TEST', description: 'environment to deploy the application', name: 'ENV', trim: true
       choice choices: ['main', 'master'], description: 'environment to deploy the application', name: 'BRANCH'
+      choice choices: ['a', 'a', 'c'], description: 'choose the name', name: 'rishabh'
   }
  environment {
          DEPLOY_BRANCH = "$BRANCH"
